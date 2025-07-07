@@ -1,371 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <base target="_self">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPEED.SHOP - Buy/Sell Free Fire Accounts</title>
-    <meta name="description" content="Premium Free Fire accounts marketplace with Russian, English and Tajik languages support">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#FF5F1F",
-                        secondary: "#2D3748",
-                        accent: "#F6AD55"
-                    },
-                    fontFamily: {
-                        sans: ['"Segoe UI"', 'Roboto', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .language-selector:hover .language-dropdown {
-            display: block;
-        }
-        .account-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой сайт — Мумиинзаде</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #444;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .contact {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-    <!-- Header with Language Selector -->
-    <header class="bg-gradient-to-r from-primary to-accent text-white shadow-lg">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-bolt text-2xl"></i>
-                <h1 class="text-2xl font-bold">SPEED.SHOP</h1>
-            </div>
-            
-            <div class="flex items-center space-x-6">
-                <nav class="hidden md:flex space-x-6">
-                    <a href="#" class="hover:text-yellow-200 transition">Home</a>
-                    <a href="#" class="hover:text-yellow-200 transition">Accounts</a>
-                    <a href="#" class="hover:text-yellow-200 transition">Sell</a>
-                    <a href="#" class="hover:text-yellow-200 transition">FAQ</a>
-                    <a href="#" class="hover:text-yellow-200 transition">Contact</a>
-                </nav>
-                
-                <div class="language-selector relative">
-                    <button class="flex items-center space-x-1 px-3 py-1 bg-white bg-opacity-20 rounded-full">
-                        <i class="fas fa-globe"></i>
-                        <span>English</span>
-                        <i class="fas fa-chevron-down text-xs"></i>
-                    </button>
-                    <div class="language-dropdown hidden absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg z-10">
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Русский</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">English</a>
-                        <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Тоҷикӣ</a>
-                    </div>
-                </div>
-                
-                <button class="md:hidden text-xl">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-    </header>
+<body>
+  <h1>Привет, я Beka!</h1>
+  
+  <!-- Вставь сюда свою ссылку на фото -->
+  <img src="https://i.imgur.com/YOURPHOTO.jpg" alt="Моё фото" />
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-primary to-accent text-white py-16">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Premium Free Fire Accounts</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Buy and sell verified Free Fire accounts with rare skins, characters and items</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <button class="bg-white text-primary font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition">
-                    Browse Accounts
-                </button>
-                <button class="bg-transparent border-2 border-white text-white font-bold px-8 py-3 rounded-full hover:bg-white hover:text-primary transition">
-                    Sell Your Account
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Accounts -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Featured Accounts</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Account Card 1 -->
-                <div class="account-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
-                    <div class="relative">
-                        <img src="https://picsum.photos/600/400?random=1" alt="Free Fire account with elite skins" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="absolute top-2 right-2 bg-primary text-white text-xs font-bold px-2 py-1 rounded">
-                            Elite Pass
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-secondary">Diamond I Account</h3>
-                            <span class="text-primary font-bold">$89.99</span>
-                        </div>
-                        <ul class="text-gray-600 mb-4 space-y-1">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 5 Legendary Skins</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 12 Characters</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 50+ Emotes</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Verified</li>
-                        </ul>
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-orange-600 transition">
-                            Buy Now
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Account Card 2 -->
-                <div class="account-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
-                    <div class="relative">
-                        <img src="https://picsum.photos/600/400?random=2" alt="Free Fire account with rare items" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="absolute top-2 right-2 bg-purple-600 text-white text-xs font-bold px-2 py-1 rounded">
-                            Rare
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-secondary">Heroic Account</h3>
-                            <span class="text-primary font-bold">$149.99</span>
-                        </div>
-                        <ul class="text-gray-600 mb-4 space-y-1">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Chrono Character</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 8 Legendary Skins</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 15 Characters</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Verified</li>
-                        </ul>
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-orange-600 transition">
-                            Buy Now
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Account Card 3 -->
-                <div class="account-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
-                    <div class="relative">
-                        <img src="https://picsum.photos/600/400?random=3" alt="New Free Fire account" class="w-full h-48 object-cover" loading="lazy">
-                        <div class="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">
-                            New
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-2">
-                            <h3 class="text-xl font-bold text-secondary">Gold III Account</h3>
-                            <span class="text-primary font-bold">$49.99</span>
-                        </div>
-                        <ul class="text-gray-600 mb-4 space-y-1">
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 3 Rare Skins</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 6 Characters</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 20+ Emotes</li>
-                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Verified</li>
-                        </ul>
-                        <button class="w-full bg-primary text-white py-2 rounded-lg hover:bg-orange-600 transition">
-                            Buy Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center mt-10">
-                <button class="border-2 border-primary text-primary font-bold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition">
-                    View All Accounts
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">How It Works</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="w-16 h-16 bg-primary bg-opacity-10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-search text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Browse Accounts</h3>
-                    <p class="text-gray-600">Find the perfect account with your desired rank, skins and characters</p>
-                </div>
-                
-                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="w-16 h-16 bg-primary bg-opacity-10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shopping-cart text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Secure Payment</h3>
-                    <p class="text-gray-600">Complete your purchase with our safe payment methods</p>
-                </div>
-                
-                <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-                    <div class="w-16 h-16 bg-primary bg-opacity-10 text-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-user-shield text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Instant Delivery</h3>
-                    <p class="text-gray-600">Receive account details immediately after payment</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-secondary">Customer Reviews</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-50 p-6 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <img src="https://picsum.photos/100?random=4" alt="Customer" class="w-12 h-12 rounded-full mr-4" loading="lazy">
-                        <div>
-                            <h4 class="font-bold">Alexey Petrov</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Got my account in 2 minutes after payment. Everything works perfectly, all skins as described. Will buy again!"</p>
-                </div>
-                
-                <div class="bg-gray-50 p-6 rounded-xl">
-                    <div class="flex items-center mb-4">
-                        <img src="https://picsum.photos/100?random=5" alt="Customer" class="w-12 h-12 rounded-full mr-4" loading="lazy">
-                        <div>
-                            <h4 class="font-bold">John Smith</h4>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="text-gray-600">"Excellent service! The account had all the rare items promised. Customer support helped me with the transfer process."</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-16 bg-gradient-to-r from-primary to-accent text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-4">Ready to Upgrade Your Free Fire Experience?</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of satisfied players who got their dream accounts from SPEED.SHOP</p>
-            <button class="bg-white text-primary font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition">
-                Browse Accounts Now
-            </button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-secondary text-white pt-12 pb-6">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fas fa-bolt mr-2"></i> SPEED.SHOP
-                    </h3>
-                    <p class="text-gray-300">Premium marketplace for Free Fire accounts with verified sellers and instant delivery.</p>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Home</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Accounts</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Sell Account</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Support</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Contact Us</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Terms of Service</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition">Refund Policy</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-bold mb-4">Connect With Us</h4>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition">
-                            <i class="fab fa-discord"></i>
-                        </a>
-                    </div>
-                    <p class="text-gray-300">support@speed.shop</p>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-400 mb-4 md:mb-0">© 2023 SPEED.SHOP. All rights reserved.</p>
-                <div class="flex space-x-4">
-                    <img src="https://picsum.photos/120/40?random=6" alt="Payment method" class="h-8" loading="lazy">
-                    <img src="https://picsum.photos/120/40?random=7" alt="Payment method" class="h-8" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Language switching functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            // Sample account data
-            const accounts = [
-                {
-                    id: 1,
-                    title: "Diamond I Account",
-                    price: 89.99,
-                    features: ["5 Legendary Skins", "12 Characters", "50+ Emotes", "Verified"],
-                    badge: { text: "Elite Pass", color: "bg-primary" },
-                    image: "https://picsum.photos/600/400?random=1"
-                },
-                {
-                    id: 2,
-                    title: "Heroic Account",
-                    price: 149.99,
-                    features: ["Chrono Character", "8 Legendary Skins", "15 Characters", "Verified"],
-                    badge: { text: "Rare", color: "bg-purple-600" },
-                    image: "https://picsum.photos/600/400?random=2"
-                },
-                {
-                    id: 3,
-                    title: "Gold III Account",
-                    price: 49.99,
-                    features: ["3 Rare Skins", "6 Characters", "20+ Emotes", "Verified"],
-                    badge: { text: "New", color: "bg-blue-500" },
-                    image: "https://picsum.photos/600/400?random=3"
-                }
-            ];
-
-            // Mobile menu toggle would be implemented here
-            // Language switching would be implemented here
-            // Account filtering/sorting would be implemented here
-            
-            // Prevent default anchor behavior
-            document.querySelectorAll('a').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    // Navigation logic would go here
-                });
-            });
-        });
-    </script>
+  <div class="contact">
+    <p>📸 Instagram: <a href="https://www.instagram.com/beeka_ff?igsh=c2l6NWVpbXY4MnVn" target="_blank">@beeka_ff</a></p>
+    <p>📧 Gmail: <a href="mailto:muminzodafiruzjon@gmail.com">ishowspeed220088@gmail.com</a></p>
+    <p>📞 Телефон: +992 978 35 99 66</p>
+  </div>
 </body>
 </html>
